@@ -10,7 +10,7 @@ import com.example.repository.UserRepository;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserService { 
 
      @Autowired
      private UserRepository userRepository;
