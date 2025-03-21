@@ -21,8 +21,8 @@ public class PasswordResetService {
     private JavaMailSender mailSender;
     @Autowired
     private PasswordEncoder passwordEncoder;
-    private final String FROM_EMAIL = "knowledgepenchuko142586@gmail.com";// Sender's email address
-    private final String RESET_URL = "http://localhost:5173/reset-password"; // Frontend reset page URL
+    private final String FROM_EMAIL = "";// Sender's email address
+    private final String RESET_URL = "https://9i93sq-3000.bytexl.dev/reset-password"; // Frontend reset page URL
     public boolean generateResetToken(String email) {
         Optional<User> optionalUser = userRepository.findByEmail(email);
         if (optionalUser.isEmpty()) {
